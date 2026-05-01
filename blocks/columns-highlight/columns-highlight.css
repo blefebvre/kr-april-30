@@ -1,3 +1,8 @@
+.columns-highlight-container {
+  max-width: unset !important;
+  padding: 0 !important;
+}
+
 .columns-highlight-container .columns-highlight-wrapper {
   max-width: unset;
   padding: 0;
@@ -6,7 +11,7 @@
 .columns-highlight > div {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-grey, #f5f5f5);
+  background-color: var(--light-color);
 }
 
 .columns-highlight .columns-highlight-img-col {
@@ -31,8 +36,13 @@
 
 .columns-highlight h1,
 .columns-highlight h2 {
-  font-size: 1.75rem;
-  margin-bottom: 16px;
+  font-size: var(--heading-font-size-xl);
+  color: var(--heading-color);
+  margin-top: 0;
+}
+
+.columns-highlight p {
+  line-height: 1.5;
 }
 
 .columns-highlight ul {
@@ -41,7 +51,7 @@
 
 .columns-highlight li {
   margin-bottom: 8px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 @media (width >= 900px) {
@@ -58,10 +68,6 @@
   .columns-highlight .columns-highlight-text-col {
     flex: 1;
     padding: 60px 48px;
-  }
-
-  .columns-highlight h1,
-  .columns-highlight h2 {
-    font-size: 2rem;
+    max-width: 50%;
   }
 }

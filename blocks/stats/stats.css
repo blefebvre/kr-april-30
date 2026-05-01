@@ -11,14 +11,17 @@
 }
 
 .stats .stats-value {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.1;
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--dark-color);
 }
 
 .stats .stats-description {
-  font-size: 1.125rem;
-  max-width: 600px;
+  font-size: var(--body-font-size-m);
+  max-width: 500px;
+  color: var(--dark-color);
 }
 
 @media (width >= 900px) {
@@ -27,6 +30,6 @@
   }
 
   .stats .stats-value {
-    font-size: 5rem;
+    font-size: 100px;
   }
 }
