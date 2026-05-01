@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://kaufmanrossin.com/services/family-office-services/",
+  "path": "services/family-office-services",
+  "timestamp": "2026-05-01T18:05:52.917Z",
+  "title": "Family Office Services | Accounting & Advisory Services",
+  "template": "services-page",
+  "blocks": [
+    "hero-split",
+    "columns-featured",
+    "columns-featured",
+    "columns-highlight",
+    "quote",
+    "stats",
+    "carousel",
+    "cards-featured",
+    "cards-insights"
+  ]
+}

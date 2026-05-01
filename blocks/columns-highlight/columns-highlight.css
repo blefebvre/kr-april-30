@@ -1,0 +1,67 @@
+.columns-highlight-container .columns-highlight-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.columns-highlight > div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-grey, #f5f5f5);
+}
+
+.columns-highlight .columns-highlight-img-col {
+  min-height: 250px;
+  overflow: hidden;
+}
+
+.columns-highlight .columns-highlight-img-col picture,
+.columns-highlight .columns-highlight-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.columns-highlight .columns-highlight-text-col {
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.columns-highlight h1,
+.columns-highlight h2 {
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+
+.columns-highlight ul {
+  padding-left: 20px;
+}
+
+.columns-highlight li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+@media (width >= 900px) {
+  .columns-highlight > div {
+    flex-direction: row;
+    min-height: 400px;
+  }
+
+  .columns-highlight .columns-highlight-img-col {
+    flex: 1;
+    min-height: unset;
+  }
+
+  .columns-highlight .columns-highlight-text-col {
+    flex: 1;
+    padding: 60px 48px;
+  }
+
+  .columns-highlight h1,
+  .columns-highlight h2 {
+    font-size: 2rem;
+  }
+}

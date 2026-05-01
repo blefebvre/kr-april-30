@@ -1,0 +1,66 @@
+.hero-split-container .hero-split-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-split {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.hero-split .hero-split-image {
+  flex: 1;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+.hero-split .hero-split-image picture,
+.hero-split .hero-split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-split .hero-split-content {
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-split .hero-split-content > div {
+  max-width: 600px;
+}
+
+.hero-split h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.hero-split p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+@media (width >= 900px) {
+  .hero-split {
+    flex-direction: row;
+    min-height: 500px;
+  }
+
+  .hero-split .hero-split-image {
+    flex: 1;
+    min-height: unset;
+  }
+
+  .hero-split .hero-split-content {
+    flex: 1;
+    padding: 60px 48px;
+  }
+
+  .hero-split h1 {
+    font-size: 2.5rem;
+  }
+}
