@@ -274,14 +274,17 @@ header .utility-bar {
     display: block;
   }
 
-  header .utility-bar > div > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+  header .utility-bar > div {
     max-width: 1264px;
     margin: 0 auto;
     padding: 8px 32px;
     box-sizing: border-box;
+  }
+
+  header .utility-bar :has(> ul) {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
   }
 
   header .utility-bar ul {
@@ -312,7 +315,7 @@ header .utility-bar {
     display: flex;
     align-items: stretch;
     padding: 0;
-    margin: -8px 16px -8px -32px;
+    margin: -8px 16px -8px 0;
   }
 
   header .utility-bar ul:first-child li:first-child a {
