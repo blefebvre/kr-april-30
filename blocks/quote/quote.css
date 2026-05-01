@@ -1,28 +1,65 @@
-.quote blockquote {
-  margin: 0 auto;
-  padding: 0 24px;
-  max-width: 900px;
+.quote-container .quote-wrapper {
+  max-width: unset;
+  padding: 0;
 }
 
-@media (width >= 900px) {
-  .quote blockquote {
-    padding: 0 32px;
-  }
+.quote {
+  background-color: var(--quote-bg);
+  padding: 60px 48px;
+}
+
+.quote blockquote {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+  position: relative;
+}
+
+.quote blockquote::before {
+  content: "\201C";
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1;
+  display: block;
+  margin-bottom: -10px;
 }
 
 .quote blockquote .quote-quotation {
   font-family: var(--heading-font-family);
-  font-size: var(--heading-font-size-xl);
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
   color: #fff;
 }
 
-.quote blockquote .quote-quotation p {
+.quote blockquote .quote-quotation p,
+.quote blockquote .quote-quotation h2 {
   color: #fff;
+  margin: 0;
+}
+
+.quote blockquote .quote-quotation p::before,
+.quote blockquote .quote-quotation p::after {
+  content: none;
 }
 
 .quote blockquote .quote-attribution {
   text-align: right;
   color: #fff;
+}
+
+@media (width >= 900px) {
+  .quote blockquote {
+    padding: 0 48px;
+  }
+
+  .quote blockquote::before {
+    font-size: 100px;
+  }
+
+  .quote blockquote .quote-quotation {
+    font-size: 42px;
+  }
 }

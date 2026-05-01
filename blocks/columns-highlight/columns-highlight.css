@@ -10,13 +10,14 @@
 
 .columns-highlight > div {
   display: flex;
-  flex-direction: column;
-  background-color: var(--light-color);
+  flex-direction: row;
+  background-color: #fff;
 }
 
 .columns-highlight .columns-highlight-img-col {
-  min-height: 250px;
+  flex: 0 0 50%;
   overflow: hidden;
+  display: none;
 }
 
 .columns-highlight .columns-highlight-img-col picture,
@@ -28,46 +29,51 @@
 }
 
 .columns-highlight .columns-highlight-text-col {
-  padding: 40px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1;
+  padding: 60px 48px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.columns-highlight h1,
-.columns-highlight h2 {
-  font-size: var(--heading-font-size-xl);
+.columns-highlight h1 {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
   color: var(--heading-color);
+  line-height: 1.2;
   margin-top: 0;
 }
 
 .columns-highlight p {
+  font-size: var(--body-font-size-m);
   line-height: 1.5;
+  color: var(--heading-color);
+  font-weight: 700;
 }
 
 .columns-highlight ul {
-  padding-left: 20px;
+  padding-left: 24px;
 }
 
 .columns-highlight li {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   line-height: 1.5;
+  font-size: var(--body-font-size-m);
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.columns-highlight li strong {
+  color: var(--text-color);
 }
 
 @media (width >= 900px) {
-  .columns-highlight > div {
-    flex-direction: row;
-    min-height: 400px;
-  }
-
   .columns-highlight .columns-highlight-img-col {
-    flex: 1;
-    min-height: unset;
+    display: block;
   }
 
   .columns-highlight .columns-highlight-text-col {
-    flex: 1;
-    padding: 60px 48px;
-    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 80px 60px;
   }
 }
