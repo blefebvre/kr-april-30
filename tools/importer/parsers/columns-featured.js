@@ -96,11 +96,14 @@ export default function parse(element, { document }) {
     textCell.push(...ctaLinks);
   }
 
-  // --- Arrange columns ---
-  // Library example: Column 1 = image, Column 2 = text
-  // If no image exists, still produce two columns (empty image cell)
+  // --- Arrange columns based on source layout direction ---
+  const isImageRight = element.querySelector('[class*="layout__image_right"]') !== null;
   const cells = [];
-  cells.push([imageCell, textCell]);
+  if (isImageRight) {
+    cells.push([textCell, imageCell]);
+  } else {
+    cells.push([imageCell, textCell]);
+  }
 
   const block = WebImporter.Blocks.createBlock(document, { name: 'Columns Featured', cells });
   element.replaceWith(block);
