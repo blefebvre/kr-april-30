@@ -277,7 +277,7 @@ header .utility-bar {
   header .utility-bar > div > div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     max-width: 1264px;
     margin: 0 auto;
     padding: 8px 32px;
@@ -289,13 +289,15 @@ header .utility-bar {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
+    align-items: stretch;
   }
 
   header .utility-bar ul li {
     padding: 0 16px;
     border-right: 1px solid rgb(255 255 255 / 30%);
     line-height: 1;
+    display: flex;
+    align-items: center;
   }
 
   header .utility-bar ul li:last-child {
@@ -306,13 +308,21 @@ header .utility-bar {
     padding-left: 0;
   }
 
+  header .utility-bar ul:first-child li:first-child {
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    margin: -8px 16px -8px -32px;
+  }
+
   header .utility-bar ul:first-child li:first-child a {
     background-color: var(--accent-color);
     color: var(--dark-color);
-    padding: 5px 18px;
+    padding: 8px 24px;
     font-weight: 700;
     font-size: 13px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
 
   /* stylelint-disable-next-line no-descending-specificity */
