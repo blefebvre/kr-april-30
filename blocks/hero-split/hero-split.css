@@ -19,6 +19,7 @@
   flex: 0 0 50%;
   position: relative;
   overflow: hidden;
+  border-right: 4px solid var(--accent-color);
 }
 
 .hero-split > div:first-child picture {
@@ -39,6 +40,7 @@
   align-items: center;
   padding: 60px 80px;
   box-sizing: border-box;
+  background-color: var(--light-color);
 }
 
 .hero-split h1 {
