@@ -23,8 +23,8 @@
 }
 
 .hero-split > div:first-child picture {
-  display: block;
-  height: 100%;
+  position: absolute;
+  inset: 0;
 }
 
 .hero-split > div:first-child img {
