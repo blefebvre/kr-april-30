@@ -7,6 +7,10 @@
   gap: 32px;
 }
 
+.cards-featured {
+  margin-bottom: 48px;
+}
+
 .cards-featured > ul > li {
   display: flex;
   flex-direction: column;
@@ -20,8 +24,7 @@
 .cards-featured .cards-featured-card-image picture,
 .cards-featured .cards-featured-card-image img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 10;
+  height: 280px;
   object-fit: cover;
   display: block;
 }
