@@ -42,7 +42,7 @@
           ]
         },
         {
-          "name": "carousel",
+          "name": "carousel-contacts",
           "instances": [
             "#sbc-kaufman-related-professionals-block_cda90b0925e62d874c5cbb355eedf365"
           ]
@@ -167,7 +167,7 @@
           "selector": "#sbc-kaufman-related-professionals-block_cda90b0925e62d874c5cbb355eedf365",
           "style": null,
           "blocks": [
-            "carousel"
+            "carousel-contacts"
           ],
           "defaultContent": []
         },

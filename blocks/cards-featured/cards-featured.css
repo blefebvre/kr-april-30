@@ -4,35 +4,32 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 32px;
 }
 
 .cards-featured > ul > li {
-  position: relative;
-  overflow: hidden;
-  min-height: 260px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards-featured .cards-featured-card-image {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .cards-featured .cards-featured-card-image picture,
 .cards-featured .cards-featured-card-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
+  display: block;
 }
 
 .cards-featured .cards-featured-card-body {
-  position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  min-height: 260px;
-  padding: 24px;
+  padding: 16px 0 0;
 }
 
 .cards-featured .cards-featured-card-body p {
@@ -41,33 +38,45 @@
 
 .cards-featured .cards-featured-card-body p:last-child {
   order: -1;
-  display: inline-block;
-  background-color: var(--dark-color);
+  background-color: rgb(50 50 50 / 80%);
   color: #fff;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 6px 12px;
-  margin-bottom: 12px;
+  padding: 8px 16px;
+  margin-top: -40px;
   align-self: flex-start;
+  position: relative;
+  z-index: 1;
 }
 
 .cards-featured .cards-featured-card-body p:first-child {
   font-family: var(--heading-font-family);
   font-size: 22px;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.35;
   color: var(--heading-color-dark);
 }
 
-.cards-featured .cards-featured-card-body p:first-child a {
+.cards-featured .cards-featured-card-body p:first-child a,
+.cards-featured .cards-featured-card-body .button {
   color: var(--heading-color-dark);
   text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+  display: inline;
+  font-family: var(--heading-font-family);
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .cards-featured .cards-featured-card-body p:first-child a:hover {
-  text-decoration: underline;
+  color: var(--link-hover-color);
 }
 
 @media (width >= 900px) {

@@ -7,7 +7,7 @@ import columnsFeaturedParser from './parsers/columns-featured.js';
 import columnsHighlightParser from './parsers/columns-highlight.js';
 import quoteParser from './parsers/quote.js';
 import statsParser from './parsers/stats.js';
-import carouselParser from './parsers/carousel.js';
+import carouselContactsParser from './parsers/carousel.js';
 import cardsFeaturedParser from './parsers/cards-featured.js';
 import cardsInsightsParser from './parsers/cards-insights.js';
 
@@ -22,7 +22,7 @@ const parsers = {
   'columns-highlight': columnsHighlightParser,
   'quote': quoteParser,
   'stats': statsParser,
-  'carousel': carouselParser,
+  'carousel-contacts': carouselContactsParser,
   'cards-featured': cardsFeaturedParser,
   'cards-insights': cardsInsightsParser,
 };
@@ -60,7 +60,7 @@ const PAGE_TEMPLATE = {
       instances: ['#sbc-stats-callout-block_544f9a1a22bcbca243d5394c6475f91c']
     },
     {
-      name: 'carousel',
+      name: 'carousel-contacts',
       instances: ['#sbc-kaufman-related-professionals-block_cda90b0925e62d874c5cbb355eedf365']
     },
     {
@@ -158,7 +158,7 @@ const PAGE_TEMPLATE = {
       name: 'Key Contacts',
       selector: '#sbc-kaufman-related-professionals-block_cda90b0925e62d874c5cbb355eedf365',
       style: null,
-      blocks: ['carousel'],
+      blocks: ['carousel-contacts'],
       defaultContent: []
     },
     {
