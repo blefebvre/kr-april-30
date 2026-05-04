@@ -43,6 +43,7 @@ footer .footer ul li {
   margin-bottom: 6px;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 footer .footer ul li a {
   font-size: 14px;
   opacity: 0.85;
